@@ -1,0 +1,8 @@
+<div>
+  <img [src]="user.photo" [alt]="user.name">
+  <p>{{user.firstName}} {{user.name}}</p>
+  <p *ngIf="isAgeToggle">{{user.age}}</p>
+  <p>{{user.quote}}</p>
+  <input type="text" [(ngModel)]="user.quote">
+  <button (click)="toggleAge()">Cacher l'âge</button>
+</div>
