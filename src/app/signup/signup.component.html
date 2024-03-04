@@ -1,0 +1,75 @@
+
+<h1>S'inscrire</h1>
+
+<form (ngSubmit)="onSubmit(); formSubmitted=true" #signupForm="ngForm">
+  <fieldset>
+    <label for="email-signup">Email</label>
+    <input
+      id="email-signup"
+      name="email"
+      type="email"
+      [(ngModel)]="newUser.email"
+      #emailField="ngModel"
+      required
+      email
+    />
+    <div *ngIf="formSubmitted && emailField.errors">
+      <span *ngIf="emailField.errors['required']">L'email est requis</span>
+      <span *ngIf="emailField.errors['email']">L'email est invalide</span>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <label for="firstname-signup">Prénom</label>
+    <input
+      id="firstname-signup"
+      name="firstname"
+      [(ngModel)]="newUser.firstname"
+      #firstnameField="ngModel"
+      type="text"
+      required
+      minlength="3"
+      maxlength="15"
+    />
+    <div *ngIf="formSubmitted && firstnameField.errors">
+      <span *ngIf="firstnameField.errors['required']">Le prénom est requis</span>
+      <span *ngIf="firstnameField.errors['minlength']">Le prénom doit comporter au moins 3 caractères</span>
+      <span *ngIf="firstnameField.errors['maxlength']">Le prénom ne doit pas dépasser 15 caractères</span>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <label for="lastname-signup">Nom de famille</label>
+    <input
+      id="lastname-signup"
+      name="lastname"
+      [(ngModel)]="newUser.lastname"
+      #lastnameField="ngModel"
+      type="text"
+      required
+      minlength="3"
+      maxlength="15"
+    />
+    <div *ngIf="formSubmitted && lastnameField.errors">
+      <span *ngIf="lastnameField.errors['email']">Le nom de famille est requis</span>
+      <span *ngIf="lastnameField.errors['minlength']">Le nom de famille doit comporter au moins 3 caractères</span>
+      <span *ngIf="lastnameField.errors['maxlengt']">Le nom de famille ne doit pas dépasser 15 caractères</span>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <label for="password-signup">Mot de passe</label>
+    <input
+      id="password-signup"
+      name="password"
+      [(ngModel)]="newUser.password"
+      #passwordField="ngModel"
+      type="password"
+      required
+    />
+    <span *ngIf="passwordField.errors?.['required']">Le mot de passe est requis</span>
+  </fieldset>
+
+  <button type="reset" (click)="resetForm()">Restaurer</button>
+  <button type="submit">Sauvegarder</button>
+</form>

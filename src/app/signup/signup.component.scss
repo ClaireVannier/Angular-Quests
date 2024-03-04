@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    margin: auto;
+  }
+
+  span {
+    color: red;
+  }
+button {
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+}
+}

@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { User } from '../models/user.models';
+import { UserProfil } from '../models/user-profil.models';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 })
 export class UserProfileComponent{
 
- user: User = {
+ user: UserProfil = {
     name : 'Doe',
     firstName : 'John',
     age : 25,
