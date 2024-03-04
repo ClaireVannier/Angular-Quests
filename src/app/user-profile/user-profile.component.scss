@@ -1,0 +1,14 @@
+div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+
+  img {
+    width: 100%;
+  }
+}
