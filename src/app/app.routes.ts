@@ -14,7 +14,8 @@ export const routes: Routes = [
   { path: 'block', component: BlockComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'searchmovies', component: SearchMovieComponent},
-  { path: 'input', component: DeveloperComponent}
+  { path: 'input', component: DeveloperComponent}, 
+  { path : 'search-movies', component: SearchMovieComponent }
 
 
 ];
