@@ -11,7 +11,7 @@ import { SkillComponent } from '../skill/skill.component';
   imports: [CommonModule, SkillComponent],
 })
 export class DeveloperComponent {
-  @Input() developer: Developer = {
+  developer: Developer = {
     lastName: 'Doe',
     firstName: 'John',
     age: 30,
