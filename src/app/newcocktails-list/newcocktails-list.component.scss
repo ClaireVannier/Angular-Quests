@@ -1,0 +1,15 @@
+div {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  img {
+    width: 100%;
+  }
+}
