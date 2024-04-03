@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
-import { CocktailService } from './cocktail.service';
+import { CocktailService } from './services/cocktail.service';
 import { HttpClientModule } from '@angular/common/http';
 
 describe('CocktailListComponent', () => {
@@ -44,3 +44,4 @@ describe('CocktailListComponent', () => {
     expect(fixture.componentInstance.cocktails).toBeTruthy();
   }));
 });
+

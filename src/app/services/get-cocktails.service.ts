@@ -8,8 +8,6 @@ import { Observable } from 'rxjs';
 })
 export class GetCocktailsService {
 
-
-
   constructor(private http: HttpClient) { }
 
   getnewCocktails(): Observable<Cocktail[]> {
