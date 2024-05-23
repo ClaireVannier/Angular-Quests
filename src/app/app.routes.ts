@@ -10,7 +10,6 @@ import { OnomatopiaListComponent } from './onomatopia-list/onomatopia-list.compo
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { NewcocktailsListComponent } from './newcocktails-list/newcocktails-list.component';
 import { NasaComponent } from './nasa/nasa.component';
-import { FingerprintComponent } from './fingerprint/fingerprint.component';
 
 export const routes: Routes = [
   { path: '', component: UserProfileComponent },
@@ -25,5 +24,4 @@ export const routes: Routes = [
   { path: 'cocktail', component: CocktailListComponent },
   { path: 'newcocktails', component: NewcocktailsListComponent },
   { path: 'nasa', component: NasaComponent },
-  { path: 'fingerprint', component: FingerprintComponent },
 ];
