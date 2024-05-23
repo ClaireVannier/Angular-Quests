@@ -1,0 +1,11 @@
+<div>
+  <fieldset>
+    <label>Ajouter un onomatopé</label>
+    <input
+      type="text"
+      [(ngModel)]="newOnomatopia"
+      (keyup.enter)="createOnomatopia()"
+    />
+  </fieldset>
+  <button (click)="createOnomatopia()">Envoyer</button>
+</div>

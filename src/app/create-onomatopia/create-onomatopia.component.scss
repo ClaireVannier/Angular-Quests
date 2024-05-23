@@ -1,0 +1,22 @@
+div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  fieldset {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input {
+      width: 60%;
+      margin-top: 5px;
+    }
+  }
+
+}

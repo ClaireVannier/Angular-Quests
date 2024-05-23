@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchMovieComponent } from './search-movies.component';
+import { OnomatopiaListComponent } from './onomatopia-list.component';
 
-describe('SearchMoviesComponent', () => {
-  let component: SearchMovieComponent;
-  let fixture: ComponentFixture<SearchMovieComponent>;
+describe('OnomatopiaListComponent', () => {
+  let component: OnomatopiaListComponent;
+  let fixture: ComponentFixture<OnomatopiaListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SearchMovieComponent]
+      imports: [OnomatopiaListComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(SearchMovieComponent);
+    fixture = TestBed.createComponent(OnomatopiaListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
